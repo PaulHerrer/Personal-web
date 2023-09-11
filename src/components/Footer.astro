@@ -1,0 +1,19 @@
+---
+const today = new Date();
+import Social from '../components/Social.astro'
+---
+
+<footer><b>
+	&copy; {today.getFullYear()} by Paulidydev.</b>
+	
+	<Social />
+
+</footer>
+<style>
+	footer {
+		margin-bottom: 0px;
+		padding: 2em;
+		background: linear-gradient(var(--gray-gradient)) no-repeat;
+		text-align: center;
+	}
+</style>

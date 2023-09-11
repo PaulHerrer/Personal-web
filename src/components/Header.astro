@@ -1,0 +1,57 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import ViewTransitions from 'astro/components/ViewTransitions.astro.jsx';
+---
+
+<header class="p-4 flex justify-between items-center">
+	
+	<nav class="mr-0 ml-0 space-x-10" >
+		<h2 ><b>
+		<a class="items-center text-teal-700 text-2xl" style="display:inline-flex;" href="/">Paulidy.Dev</a></h2>
+		<div class=" internal-links" style="align-items: center;"><b>
+				<HeaderLink href="/">Home</HeaderLink>
+				<HeaderLink class="" href="/blog">Documentation</HeaderLink>
+				<HeaderLink href="/about">About me</HeaderLink></b>
+			</b>
+		</div>
+		
+	</nav>
+</header>
+
+<style>
+	header {
+		margin: 0;
+		padding: 0 1em;
+		background: linear-gradient(var(--gray-gradient)) no-repeat;
+		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+	}
+	h2 {
+		margin: 0;
+		font-size: 1em;
+	}
+
+	h2 b a,
+	h2 b a {
+		text-decoration: teal;
+	}
+	nav {
+		display: inline-flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav a {
+		display: inline-flex;
+		padding: 1em 0.5em;
+		color: var(--black);
+		border-bottom: 1px solid transparent;
+		text-decoration: teal;
+	}
+	nav a.active {
+		text-decoration: none;
+		border-bottom-color: var(--accent);
+	}
+	nav div{
+		display: inline-flex;
+		margin-left: 440px;
+	}
+</style>
